@@ -1,0 +1,217 @@
+html, body {
+    height: 100%;
+    width: 100%;
+  }
+  #map{
+      height:100vh}
+  
+  #map-container {
+      position: relative;
+  }
+  @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap');
+
+html {
+    height:100%;
+}
+
+body{
+        background-color:#476220; 
+        height:100%;
+        font-family: Roboto, sans-serif;
+        font-size: 0.95em; 
+        color:#707070;
+    }
+
+#overlay {
+        position: fixed; /* Sit on top of the page content */
+        width: 100%; /* Full width (cover the whole page) */
+        height: 100%; /* Full height (cover the whole page) */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+        z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+        cursor: pointer; /* Add a pointer on hover */
+}
+
+
+#map-container{
+        /* width: 100%; */
+    height: 100%;
+} 
+
+#results {
+    z-index: 1030;
+    position: fixed;
+    top:0;
+}
+
+#info-tab{
+    /* min-height: 300px; */
+    background-color:#fff;
+    z-index: 1030;
+    position: fixed;
+    width: 350px;
+    /* top: 110px; */
+    left:10px;
+    bottom:0px;
+}
+
+#myTabContent {
+    overflow-y: scroll;
+    height: 500px;
+    bottom:0px;
+}
+
+
+
+#search-result-header{
+    width:100%;
+}    
+
+#logo {
+    z-index: 700;
+    position: fixed; 
+    top:0;
+    width:100px;
+}
+
+#search-bar{
+    min-width:200px;
+}
+#logo {
+    left: 15px;
+}
+
+#logo img{
+    max-height:70px;
+}
+
+p {
+    font-weight:200;
+}
+
+.bluetext{
+    color: #002640;
+}
+
+.container {
+    width:100%;
+    height:100%;
+}
+
+.home {
+    height: 100%;
+    width: 100%;
+}
+
+#home {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-color:#999; 
+    background-blend-mode: multiply;
+    transition: all .2s ease;
+
+}
+
+#home .form-control{
+    width:380px;
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 6px #333 ;
+}
+
+.bg-main {
+    background-color: #99A139;
+}
+
+.logo-margin{
+    margin-left: 50px;
+}
+
+.leaflet-popup-content-wrapper, .leaflet-popup-tip{
+    background-color: #DEE0BE;
+}
+
+.leaflet-popup-content{
+    padding:5px 3px 3px 3px;
+    font-weight: 500;
+    font-size: 14px;
+    color:#002640;
+}
+
+.lightgreen-text {
+    color:#94BE39;
+}
+
+.lightgreen-bg {
+    background-color:#94BE39;
+}
+
+.lightbrown-text {
+    color:#D4BA83;
+}
+
+.lightbrown {
+    background-color:#D4BA83; 
+}
+
+.lightblue-text{
+    color:#83B6D9;
+}
+
+.weatherText {
+    font-size: 1.5em;
+}
+.tempNumber {
+    font-size: 6em;
+    font-weight: 400;
+    color: #476220;
+    line-height: 1em;
+}
+
+.tempDegree {
+    font-size: 0.5em;
+}
+
+.highlow {
+    font-size: 2em;
+
+}
+.btn-primary:visited,
+.btn-primary:active, 
+.btn-primary:hover
+ {
+    background-color: #99A139;
+}
+
+.nav-item .nav-link {
+    color:#476220;
+}
+
+#tab-toggle.active, #tab-toggle:hover{
+    border: none !important;
+}
+
+#tab-toggle a:visited,
+#tab-toggle a:hover{
+    color:#476220;
+}
+
+@media (max-width: 575.98px) { 
+    
+
+    #myTabContent {
+        overflow-y: scroll;
+        height: 450px;
+    }
+
+    #home .form-control{
+        width:200px;
+    }
+
+}
